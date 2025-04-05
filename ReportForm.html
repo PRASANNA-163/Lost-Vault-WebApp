@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Lost Item - LostVault</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a style="text-align: left" href="navbar.html" class="arrowback">Back</a>
+    <div class="container">
+        <h2 > Report a Found Item</h2>
+        <form id="reportForm" action="report.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="itemName">Item Name:</label>
+                <input type="text" id="itemName" name="item_name" required>
+            </div>
+            <div class="form-group">
+                <label for="itemDescription">Description:</label>
+                <textarea id="itemDescription" name="description" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastSeen">Location:</label>
+                <input type="text" id="lastSeen" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="lostDate">Date Found:</label>
+                <input type="date" id="lostDate" name="report_date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="itemImage">Upload Image:</label>
+                <input type="file" id="itemImage" name="image" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="contactInfo">Your Name:</label>
+                <input type="text" id="contactInfo" name="founder_name" required>
+            </div>
+            <div class="form-group">
+                <label for="contactInfo">Your Email:</label>
+                <input type="email" id="contactInfo" name="founder_email" required>
+            </div>
+            
+            <input type="submit" value="Submit" class="button">
+        </form>
+        <div style="text-align: center"><a href="view_items.php">View Reported Items</a></div>
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

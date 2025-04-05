@@ -1,0 +1,251 @@
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-dark);
+    padding: 21px 24px;
+    color: white;
+    margin:-8px -8px 0px -8px;
+    transition: background 0.3s ease;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Added spacing between options */
+}
+
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    position: relative;
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover Effect */
+.nav-items a:hover {
+    color: #A3B4C4; /* Changes color when hovered */
+}
+
+/* Underline Animation Effect */
+.nav-items a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #A3B4C4;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-items a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Profile initials */
+.profile-initials {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: #1F2F33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* Home Content Section */
+.home-content {
+    position: relative;
+    text-align: left;
+    padding: 80px 20px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    height: 63vh;
+
+    /* Background Image with Gradient Overlay */
+    background: 
+        linear-gradient(rgba(31, 47, 51, 0.8), rgba(163, 180, 196, 0.7)), 
+        url('ProjectImage.jpg'); /* Update with correct path */
+    
+    background-size: cover;   /* Ensures image covers entire area */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--primary-dark);
+    transition: background 0.3s ease, color 0.3s ease;
+
+    color: white;
+    /* Remove animation properties for background */
+}
+
+/* Animation Effect (Only for Text and Elements) */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-in effect only to elements, NOT background */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.main-page-heading{
+    font-size: 32px;
+}
+.main-page-description{
+    font-size: 22px;
+}
+
+/* Delayed animations */
+.delay1 { animation-delay: 0.3s; }
+.delay2 { animation-delay: 0.6s; }
+.delay3 { animation-delay: 0.9s; }
+
+/* Highlight color */
+.highlight {
+    color: rgba(255, 255, 255, 0.815);
+    font-weight: bold;
+}
+
+/* Style the buttons */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: var(--button-dark);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease , color 0.3s ease  ;
+}
+
+.btn:hover {
+    background-color: #152327;
+}
+
+@font-face {
+    font-family: 'Modernline';
+    src: url('fonts/Modernline.otf') format('opentype'); /* Correct path and format */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.modern-text {
+    font-family: 'Modernline', cursive, sans-serif;
+    font-size: 28px;
+    color: #1F2F33;
+}
+
+.sun-icon {
+    font-size: 28px; /* Adjust size */
+    color: white; /* White icon */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.sun-icon:hover {
+    color: #A3B4C4; /* Change color on hover */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
+
+/* Apply Quicksand for body text */
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+/* Default Dark Mode */
+:root {
+    --primary-dark: #1F2F33;
+    --secondary-dark: #A3B4C4;
+
+    --primary-light: #4A5A62;
+    --secondary-light: #D1DCE8;
+
+    --button-dark: #1F2F33;
+    --button-light: #D1DCE8;
+}
+
+body {
+    background-color: var(--secondary-dark);
+    color: white;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+
+/* Theme Toggle Icon */
+.theme-icon {
+    font-size: 28px; /* Adjust icon size */
+    color: white; /* White icon */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.theme-icon:hover {
+    color: #A3B4C4; /* Change color on hover */
+}
+
+
+/* Light Mode */
+.light-mode {
+    background-color: var(--secondary-light);
+    color: var(--primary-dark);
+}
+
+.light-mode .navbar {
+    background-color: var(--primary-light);
+}
+
+.light-mode .home-content {
+    /* Light Mode Gradient Overlay */
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(209, 220, 232, 0.7)), 
+                url('ProjectImage.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--secondary-light);
+    color: var(--primary-dark);
+}
+
+.light-mode .theme-icon {
+    color: var(--primary-dark);
+}
+
+.light-mode .btn {
+    background-color: var(--button-light);
+    color: var(--primary-dark);
+}
+
+.light-mode .btn:hover {
+    background-color: #B0C4DE;
+}
+
+.light-mode .highlight {
+    color: var(--primary-light); /* Use primary light color in light mode */
+}
+

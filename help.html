@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - Lost & Found</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg,#1f2f33,#84929f);
+
+            color: #1f2f33;
+            text-align: center;
+        }
+
+        /* Help Section */
+        .help-section {
+            background-color: #1f2f33;
+            color: #a3b4c4;
+            padding: 60px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .help-section h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #f8f1e4; /* Dusky White */
+        }
+
+        .help-section p {
+            font-size: 20px;
+        }
+
+        /* FAQ Section */
+        .faq {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: left;
+            background: #1f2f33;
+            color: #a3b4c4;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .faq h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #f8f1e4; /* Dusky White */
+        }
+
+        .faq-item {
+            background: #a3b4c4;
+            color: #1f2f33;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .faq-item:hover {
+            transform: scale(1.02);
+        }
+
+        .faq-item h3 {
+            font-size: 22px;
+            color: #f8f1e4; /* Dusky White */
+        }
+
+        /* Contact Section */
+        .contact {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #1f2f33;
+            color: #a3b4c4;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact h2 {
+            margin-bottom: 15px;
+            color: #f8f1e4; /* Dusky White */
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #a3b4c4;
+            border-radius: 8px;
+            background: #a3b4c4;
+            color: #1f2f33;
+        }
+
+        .contact form button {
+            background: #a3b4c4;
+            color: #1f2f33;
+            padding: 12px;
+            border: none;
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .contact form button:hover {
+            background: #1f2f33;
+            color: #a3b4c4;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background: #1f2f33;
+            color: #a3b4c4;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .arrowback {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #ffffff;
+            background: #1e2a30;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .arrowback :hover {
+            background: #31444f;
+        }
+    </style>
+</head>
+<body>
+    <!-- Help Section -->
+    <a style="text-align: left" href="navbar.html" class="arrowback">Back</a>
+    <section class="help-section">
+        <h1>Help & Support</h1>
+        <p>Find answers to common questions and get assistance.</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item" href="view_items.php">
+            <h3>🔍 How do I search an item?</h3>
+            <p>Click on <a href="view_items.php">"View Items"</a> and use search bar to search items.</p>
+        </div>
+        <div class="faq-item" href="ReportForm.html">
+            <h3>🎒 How do I report a found item?</h3>
+            <p>Go to <a href="ReportForm.html">"Report an Item"</a> and provide details to help the owner claim it.</p>
+        </div>
+        <div class="faq-item">
+            <h3>📍 How can I contact support?</h3>
+            <p>You can reach out via the contact form below or email us at <strong>support@lostvault.com</strong>.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact">
+        <h2>Contact Support</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 LostVault. All rights reserved.</p>
+    </footer>
+</body>
+</html>

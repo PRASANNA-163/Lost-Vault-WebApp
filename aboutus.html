@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{
+            font-size: 14px;
+        }
+        body {
+            background-color: #1f2f33;
+            color: #a3b4c4;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            background-color: #a3b4c4;
+            color: #1f2f33;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .profile-img {
+            width: 360px;
+            height: 160px;
+            border-radius: 15px;
+            object-fit: cover;
+            border: 2px solid #1f2f33;
+            
+        }
+        a {
+            color: #1f2f33;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .arrowback {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #ffffff;
+            background: #1e2a30;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+        .help-option{
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .arrowback :hover {
+            background: #31444f;
+        }
+    </style>
+</head>
+<body>
+    <a style="text-align: left" href="navbar.html" class="arrowback">Back</a>
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card p-4">
+                   <a href="navbar.html"> <abbr title="Return to Home"><img src="about.jpg" alt="Creator Image" class="profile-img mx-auto d-block"></abbr></a>
+                    <h2 class="mt-3">Lost Vault</h2>
+                    <p class="text-muted">Welcome to LostVault Hub!</p>
+                    <p class="mt-3">Have you lost something valuable or found an item that needs to be returned to its owner? Our platform connects people to reunite lost items with their rightful owners.
+                        <br>
+                        🔍 Lost Something? Submit a report with details and location.<br>
+                        🎒 Found an Item? List it here so the owner can find it. <br>
+                        📍 Stay Updated! Browse recent lost & found posts in your area. <br>
+                        
+                        Let’s bring lost things back home! 🏠🔑</p>
+                    <hr>
+                    <h5>Contact Information</h5>
+                    <p>Email: <a href="mailto:lostvault@gmail.com">lostvault@gmail.com</a></p>
+                    <p>Phone: +91 9876543210</p>
+                    <p>Website: <a href="https://lostvault.com" target="_blank">www.lostvault.com</a></p>
+                    <p><a href="help.html" class="help-option">Help!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

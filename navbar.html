@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LostVault - Navbar</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><b>LostVault</b></div>
+        <div class="nav-items">
+            <a href="#home" id="homeBtn">Home</a>
+            <a href="view_items.php">View Items</a>
+              <a href="feedback.html" id="open-feedback">Feedback</a>
+            <a href="aboutus.html">About Us</a>
+            <span id="theme-toggle" class="material-icons theme-icon">wb_sunny</span>
+            <div class="profile-initials">LV</div> <!-- This will update dynamically -->
+        </div>
+    </nav>
+
+    <!-- Home Page Content -->
+<section id="home-content" class="home-content">
+    <h1 class="fade-in main-page-heading">Hey there! Welcome to <span class="highlight">LostVault</span> 🏷️</h1>
+    <p class="fade-in delay1 main-page-description">
+        Lost something valuable? Found an item that belongs to someone else?<br>  
+        <strong>LostVault</strong> is here to connect people and help return lost items to their rightful owners.
+    </p>
+    <a href="ReportForm.html" class="btn fade-in delay3">Report an Item</a>
+</section>
+
+
+
+    <script src="navbar.js">
+
+    </script> <!-- Link to JavaScript file -->
+</body>
+</html>

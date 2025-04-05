@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Found Item - LostVault</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <a style="text-align: left" href="navbar.html" class="arrowback">Back</a>
+    <div class="container">
+        <h2>Claim a Found Item</h2>
+        <form id="claimForm">
+            <div class="form-group">
+                <label for="itemName">Item Name:</label>
+                <input type="text" id="itemName" name="itemName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="itemDescription">Describe the Item:</label>
+                <textarea id="itemDescription" name="itemDescription" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="foundDate">Date Lost:</label>
+                <input type="date" id="foundDate" name="foundDate" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="proof">Proof of Ownership:</label>
+                <input type="file" id="proof" name="proof" accept="image/*">
+            </div>
+            
+            <div class="form-group">
+                <label for="contactInfo">Your Contact Information:</label>
+                <input type="email" id="contactInfo" name="contactInfo" required>
+            </div>
+            
+            <button type="submit" class="button">Claim Item</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        document.getElementById("claimForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("message").textContent = "Your claim has been submitted. We will contact you soon!";
+            this.reset();
+        });
+    </script>
+</body>
+</html>
